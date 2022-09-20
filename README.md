@@ -2,7 +2,5 @@
 
 ## Gif Walkthrough
 
+<img src="https://github.com/LinxinJiang/WePet/blob/main/WePets.gif">
 
-<p>
-  <img src="https://github.com/LinxinJiang/WePet/blob/main/WePets.gif" width="750">
-</p>

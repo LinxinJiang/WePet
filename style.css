@@ -1,0 +1,264 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.main_page_img_container{
+  background-color:#d7e3df;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.main_page_img{
+  display: block;
+  width: 100%;
+}
+
+
+
+.main_page_img_overlay{
+  position: absolute;
+  top: 0;
+  left: 50;
+  width: 370px;
+  height: 340px;
+  color: #fffff;
+  background: rgba(0, 0, 0, 0.6);
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* hide*/
+}
+
+
+/* main page : image's title*/
+.main_page_img_title{
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.main_page_img_overlay:hover{
+  opacity: 1;
+}
+
+
+
+
+/*
+    CAT & DOG Section
+ */
+
+ .titile_section{
+   color: #26416d;
+   text-align: left;
+   margin-top: 30px;
+   padding-left: 105px;
+ }
+
+ .animal-container{
+   /* flex, can have muti lines */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+
+ .animal-box{
+   width: 350px;
+   margin: 10px;
+   position: relative;
+   transform-style: preserve-3d;
+   perspective: 3000px;
+
+ }
+
+ .animal-box .animal-info{
+
+   width: 300px;
+   height: 220px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+   transition: 0.4s ease;
+ }
+
+
+ .animal-box .animal-des{
+   position: absolute;
+   height: 220px;
+   top: 0;
+   left: 0;
+   z-index: 0;
+   width: 100%;
+   padding: 10px;
+   opacity: 0;
+   transform: translateY(110px) rotateX(-90deg);
+ }
+
+
+ .animal-box .animal-img{
+
+ }
+
+ /* when mouse on the image*/
+ .animal-box:hover .animal-img{
+   opacity: 0;
+   transform: translateY(-110px) rotateX(90deg);
+ }
+
+
+
+ /* when mouse on the image*/
+ .animal-box:hover .animal-des{
+   opacity: 1;
+   transform: translateY(0px) rotateX(0deg);
+ }
+
+
+
+
+
+ /*
+     Q & A Section
+  */
+
+  #ForAllQA{
+    width:100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .QAContainer{
+    width: 40%;
+    max-width: 50tem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .accordion-item{
+    background-color: #463f3a;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0.5rem 2px 0.5rem rgba(0,0,0,0.1);
+
+  }
+
+
+  .left-side{
+    float: left;
+    width: 50%;
+  }
+
+  /*Link - Question*/
+  .accordion-link{
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: #463f3a;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    color: #fffff;
+  }
+
+
+
+  .accordion-link i{
+    color: #e7d5ff;
+    padding: 0.5rem;
+  }
+
+
+  /*answer*/
+  .answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #8a817c;
+    transition: max-height 650ms;
+  }
+
+  .answer::before{
+    content: "";
+    position: absolute;
+    background-color: #8a817c;
+    width: 0.6rem;
+    height: 90%;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+
+  }
+
+
+  .answer p{
+    font-size: 1.4rem;
+    padding: 2rem;
+  }
+
+  /*when the icon been click, the answer has this style*/
+  .accordion-item:target .answer{
+    max-height: 20rem;
+
+  }
+
+
+
+  /*
+     Donate
+
+  */
+
+  #donate-title h2{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 50px;
+  }
+
+
+/* input */
+  #donteform h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+  }
+
+
+
+/* enter information & btu */
+
+  #donteform{
+    margin-left: 440px;
+  }
+
+
+  input[type="text"]
+  {
+      background: transparent;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      outline: inherit;
+  }
+
+
+
+
+ /*
+    Footer
+ */

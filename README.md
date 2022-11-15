@@ -1,6 +1,5 @@
 # WePet
 
-## Gif Walkthrough
+## Live
 
-<img src="https://github.com/LinxinJiang/WePet/blob/main/WePets.gif">
-
+https://linxinjiang.github.io/WePet/MainPage.html
